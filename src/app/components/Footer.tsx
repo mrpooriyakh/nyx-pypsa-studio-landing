@@ -1,4 +1,5 @@
 import { Github, FileText, ExternalLink } from 'lucide-react';
+import { GITHUB_REPOSITORY_URL, PYPSA_PROJECT_URL } from '../constants/links';
 
 export function Footer() {
   return (
@@ -36,7 +37,9 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="#github"
+                  href={GITHUB_REPOSITORY_URL}
+                  target="_blank"
+                  rel="noreferrer"
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors flex items-center gap-2"
                 >
                   <Github className="w-4 h-4" />
@@ -45,7 +48,9 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="#pypsa"
+                  href={PYPSA_PROJECT_URL}
+                  target="_blank"
+                  rel="noreferrer"
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors flex items-center gap-2"
                 >
                   <ExternalLink className="w-4 h-4" />
@@ -90,11 +95,13 @@ export function Footer() {
         <div className="pt-8 border-t border-border">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-muted-foreground">
-              © 2026 Nyx PyPSA Studio. All rights reserved.
+              Done with love by Pooriya Khodaparast, just an energy engineering looking to optimize things and :)
             </p>
             <div className="flex items-center gap-4">
               <a
-                href="#github"
+                href={GITHUB_REPOSITORY_URL}
+                target="_blank"
+                rel="noreferrer"
                 className="w-9 h-9 rounded-lg bg-muted hover:bg-muted-foreground/20 flex items-center justify-center transition-colors"
               >
                 <Github className="w-5 h-5" />
@@ -112,3 +119,4 @@ export function Footer() {
     </footer>
   );
 }
+

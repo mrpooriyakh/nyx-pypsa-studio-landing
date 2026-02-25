@@ -9,6 +9,24 @@ import {
   CheckCircle,
 } from 'lucide-react';
 
+function PypsaInspiredLogo() {
+  return (
+    <svg
+      viewBox="0 0 120 120"
+      className="w-14 h-14 md:w-16 md:h-16"
+      role="img"
+      aria-label="PyPSA inspired logo"
+    >
+      <line x1="60" y1="24" x2="18" y2="96" stroke="#d90659" strokeWidth="10" />
+      <line x1="60" y1="24" x2="102" y2="96" stroke="#d90659" strokeWidth="10" />
+      <line x1="18" y1="96" x2="102" y2="96" stroke="#d90659" strokeWidth="10" />
+      <circle cx="60" cy="18" r="12" fill="#f4ba00" />
+      <circle cx="18" cy="102" r="12" fill="#148e57" />
+      <circle cx="102" cy="102" r="12" fill="#3494b4" />
+    </svg>
+  );
+}
+
 const features = [
   {
     icon: Network,
@@ -55,9 +73,15 @@ export function Features() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Engineering-Grade Features
-          </h2>
+          <div className="flex items-center justify-center gap-4 mb-4">
+            <PypsaInspiredLogo />
+            <h2 className="text-3xl md:text-5xl font-bold text-left">
+              Based on the amazing project done by PyPSA
+            </h2>
+          </div>
+          <p className="text-sm md:text-base tracking-wide uppercase text-secondary mb-3">
+            Special thanks to the PyPSA project
+          </p>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Purpose-built tools for power systems modeling and renewable energy optimization.
           </p>

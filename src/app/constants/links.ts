@@ -3,3 +3,8 @@ export const DOWNLOAD_RELEASE_URL =
 
 export const RELEASE_NOTES_URL =
   'https://github.com/mrpooriyakh/nyx-pypsa-gui/tags';
+
+export const GITHUB_REPOSITORY_URL =
+  'https://github.com/mrpooriyakh/nyx-pypsa-gui';
+
+export const PYPSA_PROJECT_URL = 'https://pypsa.org/';
