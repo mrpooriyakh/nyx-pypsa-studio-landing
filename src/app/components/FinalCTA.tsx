@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
 import { useInView } from './useInView';
 import { Download, FileText } from 'lucide-react';
+import { DOWNLOAD_RELEASE_URL, RELEASE_NOTES_URL } from '../constants/links';
 
 export function FinalCTA() {
   const [ref, isInView] = useInView({ threshold: 0.1 });
@@ -31,22 +32,28 @@ export function FinalCTA() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <motion.button
+            <motion.a
               whileHover={{ scale: 1.05, boxShadow: '0 0 40px rgba(245, 158, 11, 0.5)' }}
               whileTap={{ scale: 0.95 }}
+              href={DOWNLOAD_RELEASE_URL}
+              target="_blank"
+              rel="noreferrer"
               className="px-10 py-5 rounded-xl bg-accent text-accent-foreground flex items-center justify-center gap-3 text-lg font-semibold shadow-2xl shadow-accent/30 transition-shadow"
             >
               <Download className="w-6 h-6" />
               Download Beta
-            </motion.button>
-            <motion.button
+            </motion.a>
+            <motion.a
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
+              href={RELEASE_NOTES_URL}
+              target="_blank"
+              rel="noreferrer"
               className="px-10 py-5 rounded-xl bg-card border-2 border-border text-foreground flex items-center justify-center gap-3 text-lg font-semibold hover:bg-muted hover:border-primary/50 transition-all"
             >
               <FileText className="w-6 h-6" />
               Get Release Notes
-            </motion.button>
+            </motion.a>
           </div>
 
           <div className="mt-12 flex flex-wrap items-center justify-center gap-8 text-sm text-muted-foreground">

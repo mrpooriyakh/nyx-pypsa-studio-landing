@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Download, Menu, X } from 'lucide-react';
+import { DOWNLOAD_RELEASE_URL } from '../constants/links';
 
 export function Navigation() {
   const [scrolled, setScrolled] = useState(false);
@@ -54,14 +55,17 @@ export function Navigation() {
             <span className="hidden sm:inline-block px-3 py-1 rounded-full bg-secondary/20 text-secondary text-xs tracking-wide">
               PRE-RELEASE
             </span>
-            <motion.button
+            <motion.a
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
+              href={DOWNLOAD_RELEASE_URL}
+              target="_blank"
+              rel="noreferrer"
               className="hidden sm:flex px-4 py-2 rounded-lg bg-accent text-accent-foreground items-center gap-2 hover:shadow-lg hover:shadow-accent/20 transition-shadow"
             >
               <Download className="w-4 h-4" />
               <span>Download Beta</span>
-            </motion.button>
+            </motion.a>
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="md:hidden p-2 rounded-lg hover:bg-muted transition-colors"
@@ -92,10 +96,16 @@ export function Navigation() {
                   {link.label}
                 </a>
               ))}
-              <button className="w-full px-4 py-3 rounded-lg bg-accent text-accent-foreground flex items-center justify-center gap-2">
+              <a
+                href={DOWNLOAD_RELEASE_URL}
+                target="_blank"
+                rel="noreferrer"
+                onClick={() => setMobileMenuOpen(false)}
+                className="w-full px-4 py-3 rounded-lg bg-accent text-accent-foreground flex items-center justify-center gap-2"
+              >
                 <Download className="w-4 h-4" />
                 Download Beta
-              </button>
+              </a>
             </div>
           </motion.div>
         )}

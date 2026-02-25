@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
 import { Download, FileText } from 'lucide-react';
 import { NetworkVisualization } from './NetworkVisualization';
+import { DOWNLOAD_RELEASE_URL } from '../constants/links';
 
 export function Hero() {
   return (
@@ -39,14 +40,17 @@ export function Hero() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <motion.button
+              <motion.a
                 whileHover={{ scale: 1.05, boxShadow: '0 0 30px rgba(245, 158, 11, 0.4)' }}
                 whileTap={{ scale: 0.95 }}
+                href={DOWNLOAD_RELEASE_URL}
+                target="_blank"
+                rel="noreferrer"
                 className="px-8 py-4 rounded-lg bg-accent text-accent-foreground flex items-center justify-center gap-3 text-lg shadow-lg shadow-accent/20 transition-shadow"
               >
                 <Download className="w-5 h-5" />
                 Download Pre-release
-              </motion.button>
+              </motion.a>
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
