@@ -1,5 +1,11 @@
 import { Github, FileText, ExternalLink } from 'lucide-react';
-import { GITHUB_REPOSITORY_URL, PYPSA_PROJECT_URL } from '../constants/links';
+import {
+  GITHUB_REPOSITORY_URL,
+  LICENSE_URL,
+  PRIVACY_POLICY_URL,
+  PYPSA_PROJECT_URL,
+  TERMS_OF_USE_URL,
+} from '../constants/links';
 
 export function Footer() {
   return (
@@ -66,7 +72,9 @@ export function Footer() {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="#terms"
+                  href={TERMS_OF_USE_URL}
+                  target="_blank"
+                  rel="noreferrer"
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                 >
                   Terms of Use
@@ -74,7 +82,9 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="#privacy"
+                  href={PRIVACY_POLICY_URL}
+                  target="_blank"
+                  rel="noreferrer"
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                 >
                   Privacy Policy
@@ -82,7 +92,9 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href="#license"
+                  href={LICENSE_URL}
+                  target="_blank"
+                  rel="noreferrer"
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                 >
                   License
