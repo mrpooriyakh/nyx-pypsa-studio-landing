@@ -1,6 +1,7 @@
 import { motion } from 'motion/react';
 import { useInView } from './useInView';
-import { AlertCircle, MessageSquare, Bell } from 'lucide-react';
+import { AlertCircle, MessageSquare, Bell, Send } from 'lucide-react';
+import { JOIN_UPDATES_EMAIL_URL, TELEGRAM_CHANNEL_URL } from '../constants/links';
 
 export function PreReleaseNotice() {
   const [ref, isInView] = useInView({ threshold: 0.1 });
@@ -40,14 +41,26 @@ export function PreReleaseNotice() {
                   <MessageSquare className="w-5 h-5" />
                   Report Feedback
                 </motion.button>
-                <motion.button
+                <motion.a
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
+                  href={JOIN_UPDATES_EMAIL_URL}
                   className="px-6 py-3 rounded-lg bg-card border border-border text-foreground flex items-center justify-center gap-2 hover:bg-muted transition-colors"
                 >
                   <Bell className="w-5 h-5" />
                   Join Updates
-                </motion.button>
+                </motion.a>
+                <motion.a
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  href={TELEGRAM_CHANNEL_URL}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="px-6 py-3 rounded-lg bg-secondary/20 border border-secondary/30 text-foreground flex items-center justify-center gap-2 hover:bg-secondary/30 transition-colors"
+                >
+                  <Send className="w-5 h-5" />
+                  Telegram Channel
+                </motion.a>
               </div>
 
               <div className="mt-8 pt-8 border-t border-border">

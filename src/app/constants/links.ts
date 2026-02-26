@@ -12,3 +12,8 @@ export const PYPSA_PROJECT_URL = 'https://pypsa.org/';
 export const TERMS_OF_USE_URL = '/legal/terms-of-use.html';
 export const PRIVACY_POLICY_URL = '/legal/privacy-policy.html';
 export const LICENSE_URL = '/legal/license.html';
+
+export const JOIN_UPDATES_EMAIL_URL =
+  'mailto:mr.pooriyakh@gmail.com?subject=Nyx%20PyPSA%20Studio%20Updates';
+
+export const TELEGRAM_CHANNEL_URL = 'https://t.me/NyxPyPSAStudio';
