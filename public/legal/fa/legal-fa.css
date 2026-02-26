@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700;800&family=Estedad:wght@400;600;700&display=swap");
+
+:root {
+  --bg: #0d1117;
+  --panel: #161b22;
+  --text: #e6edf3;
+  --muted: #9da7b3;
+  --accent: #f4ba00;
+  --accent-2: #148e57;
+  --accent-3: #3494b4;
+  --accent-4: #d90659;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Vazirmatn", "Estedad", Tahoma, sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(circle at 10% 10%, rgba(244, 186, 0, 0.13), transparent 32%),
+    radial-gradient(circle at 90% 12%, rgba(52, 148, 180, 0.14), transparent 30%),
+    radial-gradient(circle at 12% 88%, rgba(20, 142, 87, 0.14), transparent 28%),
+    linear-gradient(180deg, #0b0f14 0%, #0d1117 100%);
+  line-height: 1.95;
+}
+
+.wrap {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 40px 20px 64px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  border: 1px solid rgba(244, 186, 0, 0.35);
+  color: var(--accent);
+  background: rgba(244, 186, 0, 0.12);
+}
+
+h1 {
+  margin: 14px 0 8px;
+  font-size: clamp(30px, 6vw, 48px);
+  line-height: 1.25;
+}
+
+h2 {
+  margin: 28px 0 10px;
+  font-size: 23px;
+}
+
+p,
+li {
+  color: var(--text);
+  font-size: 16px;
+}
+
+.meta {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.switch {
+  margin-top: 8px;
+}
+
+.card {
+  margin-top: 24px;
+  padding: 18px 18px 12px;
+  border-radius: 14px;
+  background: linear-gradient(180deg, rgba(22, 27, 34, 0.92), rgba(13, 17, 23, 0.92));
+  border: 1px solid rgba(157, 167, 179, 0.22);
+}
+
+.fun {
+  border-right: 4px solid var(--accent-4);
+  padding-right: 12px;
+}
+
+a {
+  color: #8ecbff;
+}
+
+code,
+pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+pre {
+  direction: ltr;
+  text-align: left;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  background: #0b0f14;
+  border: 1px solid rgba(157, 167, 179, 0.2);
+  border-radius: 10px;
+  padding: 14px;
+  line-height: 1.5;
+}

@@ -68,7 +68,7 @@ export function Footer() {
 
           {/* Legal */}
           <div>
-            <h4 className="font-semibold mb-4">Legal</h4>
+            <h4 className="font-semibold mb-4">Legal | حقوقی</h4>
             <ul className="space-y-3">
               <li>
                 <a
@@ -77,7 +77,7 @@ export function Footer() {
                   rel="noreferrer"
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  Terms of Use
+                  شرایط استفاده
                 </a>
               </li>
               <li>
@@ -87,7 +87,7 @@ export function Footer() {
                   rel="noreferrer"
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  Privacy Policy
+                  حریم خصوصی
                 </a>
               </li>
               <li>
@@ -97,7 +97,7 @@ export function Footer() {
                   rel="noreferrer"
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  License
+                  مجوز (MIT)
                 </a>
               </li>
             </ul>

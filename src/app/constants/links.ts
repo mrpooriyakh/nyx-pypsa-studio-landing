@@ -9,6 +9,6 @@ export const GITHUB_REPOSITORY_URL =
 
 export const PYPSA_PROJECT_URL = 'https://pypsa.org/';
 
-export const TERMS_OF_USE_URL = '/legal/terms-of-use.html';
-export const PRIVACY_POLICY_URL = '/legal/privacy-policy.html';
-export const LICENSE_URL = '/legal/license.html';
+export const TERMS_OF_USE_URL = '/legal/fa/terms-of-use.html';
+export const PRIVACY_POLICY_URL = '/legal/fa/privacy-policy.html';
+export const LICENSE_URL = '/legal/fa/license.html';
