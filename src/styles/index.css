@@ -1,3 +1,27 @@
 @import './fonts.css';
 @import './tailwind.css';
 @import './theme.css';
+
+:root {
+  --nyx-cursor: url('/assets/nyx-cursor.svg') 54 26;
+}
+
+*,
+*::before,
+*::after {
+  cursor: var(--nyx-cursor), auto !important;
+}
+
+a,
+button,
+[role='button'],
+input,
+select,
+textarea,
+summary,
+label,
+details,
+::-webkit-scrollbar,
+::-webkit-scrollbar-thumb {
+  cursor: var(--nyx-cursor), pointer !important;
+}
