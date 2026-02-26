@@ -68,7 +68,7 @@ export function Footer() {
 
           {/* Legal */}
           <div>
-            <h4 className="font-semibold mb-4">Legal | حقوقی</h4>
+            <h4 className="font-semibold mb-4">Legal</h4>
             <ul className="space-y-3">
               <li>
                 <a
@@ -77,7 +77,7 @@ export function Footer() {
                   rel="noreferrer"
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  شرایط استفاده
+                  Terms of Use
                 </a>
               </li>
               <li>
@@ -87,7 +87,7 @@ export function Footer() {
                   rel="noreferrer"
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  حریم خصوصی
+                  Privacy Policy
                 </a>
               </li>
               <li>
@@ -97,7 +97,7 @@ export function Footer() {
                   rel="noreferrer"
                   className="text-sm text-muted-foreground hover:text-foreground transition-colors"
                 >
-                  مجوز (MIT)
+                  License (MIT)
                 </a>
               </li>
             </ul>
@@ -107,7 +107,7 @@ export function Footer() {
         <div className="pt-8 border-t border-border">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-sm text-muted-foreground">
-              Done with love by Pooriya Khodaparast, just an energy engineering looking to optimize things and :)
+              Done with love by {'\u067e\u0648\u0631\u06cc\u0627 \u062e\u062f\u0627\u067e\u0631\u0633\u062a'} (Pooriya Khodaparast), just an energy engineering looking to optimize things and :)
             </p>
             <div className="flex items-center gap-4">
               <a
