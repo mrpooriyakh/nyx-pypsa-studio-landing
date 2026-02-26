@@ -108,7 +108,7 @@ export function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="flex items-center gap-3">
               <img
-                src="/assets/renewable-art.svg"
+                src="/assets/renewable-art.png"
                 alt="Renewable energy illustration"
                 className="w-12 h-12 rounded-md border border-border object-cover"
               />
