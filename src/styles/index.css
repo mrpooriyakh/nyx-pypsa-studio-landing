@@ -3,7 +3,7 @@
 @import './theme.css';
 
 :root {
-  --nyx-cursor: url('/assets/cursor.png') 12 6;
+  --nyx-cursor: url('/assets/cursor-small.png') 9 5;
 }
 
 *,
