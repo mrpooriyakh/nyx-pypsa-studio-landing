@@ -17,3 +17,6 @@ export const JOIN_UPDATES_EMAIL_URL =
   'mailto:mr.pooriyakh@gmail.com?subject=Nyx%20PyPSA%20Studio%20Updates';
 
 export const TELEGRAM_CHANNEL_URL = 'https://t.me/NyxPyPSAStudio';
+
+export const FEEDBACK_ISSUES_URL =
+  'https://github.com/mrpooriyakh/nyx-pypsa-gui/issues';

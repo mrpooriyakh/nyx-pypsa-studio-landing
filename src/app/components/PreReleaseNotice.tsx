@@ -1,7 +1,11 @@
 import { motion } from 'motion/react';
 import { useInView } from './useInView';
 import { AlertCircle, MessageSquare, Bell, Send } from 'lucide-react';
-import { JOIN_UPDATES_EMAIL_URL, TELEGRAM_CHANNEL_URL } from '../constants/links';
+import {
+  FEEDBACK_ISSUES_URL,
+  JOIN_UPDATES_EMAIL_URL,
+  TELEGRAM_CHANNEL_URL,
+} from '../constants/links';
 
 export function PreReleaseNotice() {
   const [ref, isInView] = useInView({ threshold: 0.1 });
@@ -33,14 +37,17 @@ export function PreReleaseNotice() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <motion.button
+                <motion.a
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
+                  href={FEEDBACK_ISSUES_URL}
+                  target="_blank"
+                  rel="noreferrer"
                   className="px-6 py-3 rounded-lg bg-primary text-primary-foreground flex items-center justify-center gap-2 hover:shadow-lg hover:shadow-primary/20 transition-shadow"
                 >
                   <MessageSquare className="w-5 h-5" />
                   Report Feedback
-                </motion.button>
+                </motion.a>
                 <motion.a
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
